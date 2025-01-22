@@ -75,6 +75,7 @@ nav a {
 nav a:hover {
     color: var(--nav-hover);
     transform: rotate(-10deg);
+    transition: 0.25s;
 }
 
 nav a.active {
