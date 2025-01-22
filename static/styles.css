@@ -4,7 +4,7 @@
     --h1-color: #00ff00;
     --h2-color: #FF9500;
     --h3-color: #FFDD00;
-    --nav-hover: #8c00ff;
+    --nav-hover: #03dffc;
     --nav-text: #ff0000;
     --box-shadow-color: #8c00ff;
 }
@@ -68,10 +68,19 @@ nav a {
     text-decoration: none;
     margin: 0 20px;
     font-size: 28px;
+    display: inline-block;
+    margin: 10px
 }
 
 nav a:hover {
     color: var(--nav-hover);
+    transform: rotate(-10deg);
+}
+
+nav a.active {
+    color: var(--nav-hover);
+    font-size: 32px;
+    transform: rotate(-10deg);
 }
 
 main {
