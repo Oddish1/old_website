@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #363945;
+    --text-color: #EFE1CE;
+    --h1-color: #00ff00;
+    --h2-color: #FF9500;
+    --h3-color: #FFDD00;
+    --nav-hover: #8c00ff;
+    --nav-text: #ff0000;
+    --box-shadow-color: #8c00ff;
+}
+
+body {
+    margin: 0;
+    background: url('../static/images/twinkling_stars.gif') repeat;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+article {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 5px 5px var(--box-shadow-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--h1-color);
+    margin-top: 0;
+    font-size: 28px;
+}
+
+h2 {
+    color: var(--h2-color);
+    font-size: 24px;
+}
+
+h3 {
+    color: var(--h3-color);
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+nav a:hover {
+    color: var(--nav-hover);
+}
+
+main {
+    margin-top: 20px;
+}
+
+.nav-font {
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h-font {
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-font {
+    font-family: "PT Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
