@@ -115,3 +115,12 @@ li a {
 li a:hover {
     color: var(--nav-hover);
 }
+
+ul.news {
+    list-style-type: none;
+}
+
+strong.news {
+    color: var(--nav-hover);
+    background-color: var(--box-shadow-color);
+}
