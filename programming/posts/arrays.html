@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lant="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An overview and description of the Array data structure.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oddish1 | Arrays</title>
+
+    <link rel="stylesheet" href="../../static/styles.css">
+
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"
+  </head>
+
+  <body>
+    <nav>
+      <a class="h-font" href="../../index.html">Home</a>
+      <a class="h-font" href="../../journal/index.html">Journal</a>
+      <a class="h-font" href="../../minecraft/index.html">Minecraft</a>
+      <a class="h-font active" href="../index.html">Programming</a>
+      <a class="h-font" href="../../about.html">About</a>
+    </nav>
+
+    <main>
+      <article>
+        <header>
+          <h1 class="h-font">Arrays</h1>
+          <p class="p-font">&#128467; January 23, 2025</p>
+          <p class="p-font">&#9202; 1:25 PM</p>
+        </header>
+
+        <hr>
+
+        <h2 class="h-font">Definition</h2>
+        <p class="p-font">
+          A collection of elements, of the same data type, stored in contiguous memory locations. Each element is identified by a unique index, typically starting at 0 in most programming languages. The memory address at the first element is known as the base address. Subsequent elements are located at a fixed offset from the base, calculated based on the size of the data type being stored.
+        </p>
+
+        <h2 class="h-font">Example: Creating Arrays</h2>
+        <p class="p-font">
+          The first example, is a fairly common way of defining an array. Here we are creating an array named <code class="language-clike">numbers</code> with 5 indices reserved. The array is storing the <code class="language-clike">int</code> data type. This data type is 32 bits, or 4 bytes long. So the computer knows that it needs to reserve 5 indices each of size 4 bytes for a total of 20 bytes of memory. We then initialize the array with the values <code class="language-clike">{1, 2, 3, 4, 5}</code>.
+        </p>
+        <pre class="line-numbers"><code class="language-clike">
+            int numbers[5] = {1, 2, 3, 4, 5};
+        </code></pre>
+        <p class="p-font">
+          We can also assign fewer elements than are reserved for the array. This leaves the last two reserved elements available so that we can assign them later.
+        </p>
+        <pre class="line-numbers"><code class="language-clike">
+            int numbers[5] = {1, 2, 3};
+        </code></pre>
+        <p class="p-font">
+          It is also possible to initialize an array without specifying the size. The compiler will know the size of the array because it knows the number of items stored inside of it. Even though this is possible, it is best to be explicit when defining your arrays.
+        </p>
+        <pre class="line-numbers"><code class="language-clike">
+            int numbers[] = {1, 2, 3, 4, 5}
+        </code></pre>
+        <p class="p-font">
+          As you can see, the array still has 5 indices being used, and the compiler will recognize that.
+        </p>
+
+        <h2 class="h-font">Example: Accessing Arrays</h2>
+        <p class="p-font">
+          You can access an array index by passing the index you wish to access to the array as shown below. Just remember to keep in mind how your programming language indexes arrays. Most are zero-indexed, meaning the first element is stored at index 0, and the last element is stored at <code>n-1</code> where <code>n</code> is the size of your array.
+        </p>
+        <p class="p-font">
+          I am using C for all of these code examples, and C is a zero-indexed language, as are most other programming languages. So to access the last element in our 5 element array, I will pass index 4 to the array.
+        </p>
+        <pre class="line-numbers"><code class="language-clike">
+            #include <stdio.h>
+            int main() {
+              int numbers[5] = {1, 2, 3, 4, 5};
+              printf("%d\n", numbers[4]);
+              return 0;
+            }
+
+            // output:
+            // 5
+        </code></pre>
+        <p class="p-font">
+          In the above code we print out the last element of our array.
+        </p>
+        <p class="p-font">
+          You can use a similar mechanic to re-assign indices. Take a look at the code below.
+        </p>
+        <pre class="line-numbers"><code class="language-clike">
+            #include <stdio.h>
+            int main() {
+              int numbers[5] = {1, 2, 3, 4, 5};
+              numbers[0] = 6;
+              return 0;
+            }
+        </code></pre>
+        <p class="p-font">
+          Here, we change the first number of the array to 6.
+        </p>
+
+      </article>
+    </main>
+
+    <footer>
+      <p class="p-font">&copy; 2025 Oddish1. All rights reserved.</p>
+    </footer>
+
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  </body>
+</html>
