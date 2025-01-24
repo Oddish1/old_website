@@ -132,3 +132,8 @@ strong.news {
     color: var(--bg-color-alt);
     background-color: var(--box-shadow-color);
 }
+
+div.news {
+    overflow: auto;
+    height: 300px;
+}
