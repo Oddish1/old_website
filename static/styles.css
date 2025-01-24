@@ -4,6 +4,7 @@
     --h1-color: #00ff00;
     --h2-color: #FF9500;
     --h3-color: #FFDD00;
+    --h4-color: #ed40bc;
     --nav-hover: #03dffc;
     --nav-text: #ff0000;
     --box-shadow-color: #8c00ff;
@@ -44,6 +45,11 @@ h2 {
 h3 {
     color: var(--h3-color);
     font-size: 20px;
+}
+
+h4 {
+    color: var(--h4-color);
+    font-size: 18px;
 }
 
 footer {
